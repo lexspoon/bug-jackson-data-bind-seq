@@ -1,0 +1,31 @@
+{
+    "environ": [
+        "HOME", 
+        "JAVA_HOME"
+    ], 
+    "localenv": [
+        "SSH_AUTH_SOCK"
+    ], 
+    "rules": [
+        {
+            "commands": [
+                "mkdir -p \"c32\"", 
+                "touch c32/empty"
+            ], 
+            "inputs": [
+                "c32/zipmerge:zipmerge", 
+                "c32/mk_errinfo:mk_errinfo", 
+                "c32/id_file:id_file", 
+                "c32/extractor:extractor", 
+                "c32/preload_tracer:preload_tracer", 
+                "c32/libtrace:libtrace32.so", 
+                "c32/odasa:odasa", 
+                "c32/query_cli_native:query_cli_native32.so"
+            ], 
+            "name": "c32", 
+            "outputs": [
+                "c32/empty"
+            ]
+        }
+    ]
+}
