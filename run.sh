@@ -3,6 +3,7 @@ set -e
 #JVER=2.2.0
 #JVER=2.6.0
 JVER=2.6.4
+#JVER=2.7.0
 
 CP=jackson-annotations-$JVER.jar:jackson-core-$JVER.jar:jackson-databind-$JVER.jar
 
